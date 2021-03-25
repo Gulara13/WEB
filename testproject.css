@@ -1,0 +1,152 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.nav_menu{
+    height: 50px;
+    width:  100%;
+    background-color:  #34495e;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav_menu li{
+    display: inline-block;
+    padding:15px 10px;
+    margin-left: 20px;
+    list-style-type: none;  
+}
+.nav_menu ul li  a {
+  text-decoration: none;
+  color: #fff;
+  padding:6px 14px ;
+  border-radius:6px;
+  font-family: arial ,sans-serif;
+  font-size: 90%;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.ul1 li {
+  display: block;
+  background-color: #34495e;
+  margin-left:0;
+  text-align: left;
+}
+.nav_menu ul li a:focus {
+  background-color:#3498db ;
+}
+.nav_menu ul .ul1 li a{
+  transition: linear 0.4s;
+}
+.nav_menu ul  li a:hover {
+  background-color: #2980b9;
+}
+.nav_menu ul .ul1 li a:hover {
+  border-radius: 0;
+  padding-left: 50%;
+}
+.nav_menu > ul > li{
+  float:left;
+  position:relative;
+}
+.nav_menu ul .ul1 {
+  position: absolute;
+  padding: 0;
+  display: none;
+  top: 85%;
+  min-width: 140px;
+}
+.nav_menu ul li:hover .ul1{
+  display: block;
+}
+
+.latesnews{
+    top: 15px;
+    right: 226px;
+    width: 18%;
+    height: 5%;
+    color:white;
+    position: fixed;
+    white-space: nowrap;
+    font-size: 16px;
+}
+.latesnews p{
+  font-weight: bold;
+}
+
+.microphone{
+  position:absolute;
+  right: 476px;
+  color: #fff;
+  top: 15px;
+  font-size: 20PX;
+}
+.social_menu{
+  color: #fff;
+  font-size:30px;
+  padding:9px;
+  position: absolute;
+  right:3%
+}
+.social_menu a{
+  color: #fff;
+  text-decoration: none;
+}
+
+label #bar_one, label #bar_two{
+  font-size: 30px;
+  color:#fff;
+  float: left;
+  line-height:50px;
+  margin-right:20px;
+  cursor: pointer;
+  display:none;
+}
+
+#res_menu{
+  display:none;
+}
+@media (max-width:870px){
+label #bar_one{
+  display: block;
+}
+
+.nav_menu ul {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background:#34495e;
+  top:50px;
+  left:-100%;
+  text-align: center;
+  transition: all .5s;
+} 
+.nav_menu ul li{
+  display: block;
+  margin: 40px 0;
+  line-height: 30px;
+  float: none;
+}
+
+.nav_menu ul li a{
+  font-size:20px;
+}
+
+ #res_menu:checked ~ ul{
+   left:0;
+ }
+ #res_menu:checked ~ label #bar_one{
+   display: none;
+ }
+ #res_menu:checked ~ label #bar_two{
+  display: block;
+}
+
+.microphone{
+ visibility: hidden;
+}
+.latesnews{
+  visibility: hidden;
+}
+
+
+}
